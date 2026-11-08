@@ -170,23 +170,23 @@ function ButtonLink({ to, children, secondary = false }) {
 function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero brand-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <p className="eyebrow light">THE SIGNATURE RETREAT EXPERIENCE</p>
+          <p className="eyebrow light">THE RISE COLLECTIVE PRESENTS</p>
           <h1>
-            Make room for
-            <br />
-            <em>what comes next.</em>
+            HerShift <span className="hero-divider">|</span> <em>HerRise</em>
           </h1>
+          <h2 className="hero-subtitle">
+            The New Beginnings & Reinvention Experience
+          </h2>
           <p className="hero-copy">
-            A meaningful pause to reflect, reconnect with yourself and reimagine
-            the life you want to create.
+            Your next chapter doesn't need permission. It needs intention.
           </p>
           <div className="hero-actions">
-            <ButtonLink to="/events">Explore the experiences</ButtonLink>
+            <ButtonLink to="/events">Explore January 2027 events</ButtonLink>
             <Link className="text-link light-link" to="/about">
-              Discover HerShift | HerRise
+              Discover our approach
             </Link>
           </div>
           <div className="hero-note">
@@ -222,7 +222,69 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="experiences section section-tint">
+      <section className="upcoming section section-tint">
+        <div className="section-heading">
+          <span className="overline">JANUARY 2027 · UPCOMING EXPERIENCES</span>
+          <h2>
+            Make room for
+            <br />
+            <em>what comes next.</em>
+          </h2>
+          <p>
+            Choose a one-day reinvention experience in Toronto or Cambridge, or
+            give yourself four days to reset at The Winter Reset in Ingersoll.
+          </p>
+        </div>
+        <div className="upcoming-grid">
+          <article className="upcoming-card">
+            <img
+              src="/images/new-beginnings-reinvention.png"
+              alt="HerShift HerRise New Beginnings and Reinvention Experience event flyer"
+            />
+            <div className="upcoming-copy">
+              <span className="overline">
+                ONE-DAY EXPERIENCE · TWO LOCATIONS
+              </span>
+              <h3>New Beginnings & Reinvention</h3>
+              <p>
+                Reflection, inspiration, wellness, meaningful connections and
+                practical tools to help you shape your next chapter.
+              </p>
+              <p className="event-dates">
+                <CalendarDays size={17} /> Toronto · January 16, 2027
+                <br />
+                <CalendarDays size={17} /> Cambridge · January 23, 2027
+              </p>
+              <strong>Early Bird $119 · Regular $149 · VIP $199</strong>
+              <ButtonLink to="/events">View event details</ButtonLink>
+            </div>
+          </article>
+          <article className="upcoming-card">
+            <img
+              src="/images/winter-reset.png"
+              alt="HerShift HerRise The Winter Reset four-day retreat flyer"
+            />
+            <div className="upcoming-copy">
+              <span className="overline">FOUR-DAY RETREAT · 12 PLACES</span>
+              <h3>The Winter Reset</h3>
+              <p>
+                A restorative winter retreat combining spa and wellness,
+                personal growth, exploring Ingersoll and a celebration dinner.
+              </p>
+              <p className="event-dates">
+                <CalendarDays size={17} /> January 26–29, 2027
+                <br />
+                <MapPin size={17} /> Ingersoll, Ontario
+              </p>
+              <strong>12 places available · Enquire for details</strong>
+              <ButtonLink to="/events" secondary>
+                View retreat details
+              </ButtonLink>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section className="experiences section">
         <div className="section-heading">
           <span className="overline">THREE WAYS TO RISE</span>
           <h2>
@@ -284,43 +346,105 @@ function Events() {
   return (
     <>
       <PageHero
-        eyebrow="FIND YOUR EXPERIENCE"
+        eyebrow="JANUARY 2027 · UPCOMING EVENTS"
         title={
           <>
-            Retreats & <em>gatherings.</em>
+            Experiences to help you <em>rise.</em>
           </>
         }
-        intro="Explore the experiences designed to meet you where you are and support the woman you are becoming."
+        intro="Choose the one-day New Beginnings & Reinvention Experience in Toronto or Cambridge, or join us for The Winter Reset in Ingersoll."
       />
       <section className="section events-layout">
-        <div className="event-feature">
-          <div className="event-image"></div>
-          <div className="event-info">
-            <span className="overline">
-              FEATURED EXPERIENCE · INTEREST LIST OPEN
-            </span>
+        <div className="event-listing">
+          <div className="event-poster">
+            <img
+              src="/images/new-beginnings-reinvention.png"
+              alt="New Beginnings and Reinvention Experience flyer"
+            />
+          </div>
+          <div className="event-listing-copy">
+            <span className="overline">FEATURED · ONE-DAY EXPERIENCE</span>
             <h2>
-              The Signature
+              HerShift | HerRise
               <br />
-              <em>5-Day Retreat</em>
+              <em>New Beginnings & Reinvention</em>
             </h2>
             <p>
-              Five days to reflect, reconnect, restore and rise. A thoughtful
-              balance of guided personal development, wellness, sisterhood,
-              destination exploration and time to yourself.
+              Join us for a transformative day of reflection, inspiration and
+              personal discovery. Whether you're ready to start again,
+              rediscover your purpose or simply want more from life — this
+              experience is for you.
+            </p>
+            <div className="event-benefits">
+              <span>
+                <Sparkles /> Inspiring sessions
+              </span>
+              <span>
+                <Users /> Meaningful connections
+              </span>
+              <span>
+                <Heart /> Wellness & self-care
+              </span>
+              <span>
+                <CheckCircle2 /> Practical tools
+              </span>
+            </div>
+            <div className="event-date-box">
+              <div>
+                <strong>TORONTO</strong>
+                <span>Saturday, January 16, 2027</span>
+                <small>9:30 AM – 5:00 PM</small>
+              </div>
+              <div>
+                <strong>CAMBRIDGE</strong>
+                <span>Saturday, January 23, 2027</span>
+                <small>9:30 AM – 5:00 PM</small>
+              </div>
+            </div>
+            <h3>Ticket options</h3>
+            <p className="ticket-prices">
+              Early Bird $119 <i>|</i> Regular $149 <i>|</i> VIP Experience $199
+            </p>
+            <p className="small-note">
+              Includes refreshments, lunch, guided exercises, a personal
+              reinvention journal and networking.
+            </p>
+            <ButtonLink to="/register">Register your interest</ButtonLink>
+          </div>
+        </div>
+        <div className="event-listing winter-listing">
+          <div className="event-poster">
+            <img
+              src="/images/winter-reset.png"
+              alt="The Winter Reset four-day retreat flyer"
+            />
+          </div>
+          <div className="event-listing-copy">
+            <span className="overline">
+              FEATURED RETREAT · LIMITED TO 12 PLACES
+            </span>
+            <h2>
+              The Winter <em>Reset</em>
+            </h2>
+            <p>
+              A four-day retreat for women to pause, restore and reconnect with
+              what matters. Enjoy spa and wellness, personal growth, time to
+              explore Ingersoll and a celebration dinner.
             </p>
             <div className="event-meta">
               <span>
-                <CalendarDays size={16} /> Dates announced soon
+                <CalendarDays size={16} /> January 26–29, 2027
               </span>
               <span>
-                <MapPin size={16} /> Destination announced with each retreat
+                <MapPin size={16} /> Ingersoll, Ontario
+              </span>
+              <span>
+                <Users size={16} /> Only 12 places available
               </span>
             </div>
-            <div className="event-bottom">
-              <strong>Enquire for details</strong>
-              <ButtonLink to="/register">Register interest</ButtonLink>
-            </div>
+            <ButtonLink to="/register" secondary>
+              Enquire about the retreat
+            </ButtonLink>
           </div>
         </div>
         <div className="section-heading compact">
@@ -530,6 +654,13 @@ function Register() {
               onChange={(e) => setForm({ ...form, experience: e.target.value })}
             >
               <option value="">Select an experience</option>
+              <option>
+                New Beginnings & Reinvention — Toronto, January 16, 2027
+              </option>
+              <option>
+                New Beginnings & Reinvention — Cambridge, January 23, 2027
+              </option>
+              <option>The Winter Reset — Ingersoll, January 26–29, 2027</option>
               <option>Her Next Chapter</option>
               <option>The Woman You're Becoming</option>
               <option>The Leader Behind the Work</option>
