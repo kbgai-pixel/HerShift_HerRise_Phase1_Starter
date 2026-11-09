@@ -880,3 +880,41 @@ p {
     padding: 25px 21px;
   }
 }
+
+/* Clean event presentation and brand-led visual panels */
+.hero.brand-hero { background: linear-gradient(90deg,rgba(38,18,39,.91),rgba(45,25,43,.58)), url("/HerShift%20HerRise%20Retreats_%20Reflect,%20Reconnect,%20Reimagine.png") center 42%/cover; }
+.hero-subtitle { color:#fff; font:500 clamp(1.7rem,3.2vw,2.8rem) "Playfair Display",serif; max-width:680px; margin:0 0 14px; }
+.hero-divider { color:#d6ad76; }
+.upcoming-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; align-items:stretch; }
+.upcoming-card { background:#fff; display:flex; flex-direction:column; min-width:0; }
+.event-art { min-height:235px; padding:25px; display:flex; flex-direction:column; justify-content:space-between; color:#fff; text-align:center; background:linear-gradient(145deg,#4a2347,#8a527c); }
+.event-art span,.event-art small { font-size:9px; letter-spacing:.18em; font-weight:700; }
+.event-art strong { font:500 clamp(1.55rem,2.5vw,2.2rem)/1.15 "Playfair Display",serif; letter-spacing:.03em; }
+.event-art strong em { color:#f1d6e5; }
+.event-art-winter { background:linear-gradient(145deg,#33243f,#87708f); }
+.event-art-new { background:linear-gradient(145deg,#6b294e,#b66c88); }
+.event-art-antigua { background:linear-gradient(145deg,#4a2347,#b18a58); align-items:center; }
+.event-art-antigua svg { color:#f1d6e5; }
+.upcoming-copy { padding:25px; display:flex; flex-direction:column; align-items:flex-start; flex:1; }
+.upcoming-copy h3 { color:var(--plum); font-size:25px; margin-bottom:12px; }
+.upcoming-copy p { font-size:13px; }
+.upcoming-copy .event-dates { line-height:2.1; }
+.event-dates svg { display:inline-block; vertical-align:middle; margin-right:7px; color:var(--gold); }
+.upcoming-copy .button { margin-top:auto; align-self:flex-start; }
+.upcoming-copy > strong { font-size:11px; color:var(--plum); margin:0 0 18px; }
+.upcoming-more { text-align:center; margin-top:38px; }
+.event-category-heading { text-align:center; max-width:650px; margin:35px auto 38px; scroll-margin-top:110px; }
+.event-category-heading h2 { color:var(--plum); }
+.event-category-heading p { margin:auto; }
+.event-listing { background:#fff; margin:0 auto 20px; max-width:960px; border-left:4px solid #c6a8c3; }
+.event-listing.rose { border-color:#d7a6ad; }
+.event-listing.gold { border-color:#c2a16d; }
+.event-listing-copy { padding:34px 42px; display:flex; flex-direction:column; align-items:flex-start; }
+.event-listing-copy h2 { color:var(--plum); margin-bottom:14px; }
+.event-listing-copy p { max-width:720px; }
+.event-listing-copy .button { margin-top:8px; }
+.event-listing-copy .ticket-prices { color:var(--plum); font-weight:700; font-size:13px; }
+.event-listing .event-meta { margin:8px 0 14px; }
+.about-photo { background:url("/HerShift%20HerRise%20Retreats_%20Reflect,%20Reconnect,%20Reimagine.png") center/contain no-repeat; min-height:440px; }
+@media(max-width:900px) { .upcoming-grid { grid-template-columns:1fr; max-width:620px; margin:auto; } .event-art { min-height:210px; } }
+@media(max-width:800px) { .event-listing-copy { padding:28px 23px; } .about-photo { min-height:300px; } }
