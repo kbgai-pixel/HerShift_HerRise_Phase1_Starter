@@ -4,7 +4,7 @@ import { ArrowRight, Menu, X, CalendarDays, MapPin, Sparkles, Heart, Users, Mail
 
 const BOOKING_URL = 'https://tidycal.com/kfm';
 const CONTACT_EMAIL = 'hershiftherise@gmail.com';
-const PAYPAL_URL = 'https://paypal.com/kbodyblends';
+const PAYPAL_URL = 'https://paypal.me/kbodyblends';
 
 const experiences = [
   { id:'next-chapter', number:'01', title:'Her Next Chapter', audience:'For women navigating divorce, separation or a major life transition.', message:'You are still you. There is life, possibility and purpose beyond this chapter.', detail:'A thoughtful space to pause, breathe, rediscover your confidence and begin imagining what life can look like from here.', tone:'lavender' },
